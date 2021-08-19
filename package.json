@@ -1,0 +1,23 @@
+{
+  "name": "javascript_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeanDro/JavaScript_Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeanDro/JavaScript_Game/issues"
+  },
+  "homepage": "https://github.com/DeanDro/JavaScript_Game#readme",
+  "dependencies": {
+    "electron": "^13.2.0"
+  }
+}
