@@ -18,27 +18,16 @@ function gameStart(guessWord){
     return gaps.join('');
 }
 
-function convertClickToLetter(elId){
-    alert(elId);
-    let el = document.getElementById(elId);
-    el.innerText = elId;
+function convertClickToLetter(){
+    alert('This method is working!');
 }
 
 let missingWord = convertWord();
-let gap = gameStart(missingWord);
+let gaps = gameStart(missingWord);
 
+const mainDiv = document.getElementById('word');
+mainDiv.innerHTML = gaps;
 
-let wordTarget = document.getElementById('word');
-
-wordTarget.innerHTML = gap;
-
-function addListenersToLetters(){
-    for (let el of missingWord){
-        currentElement = document.getElementById(el)
-        currentElement.addEventListener('click', () =>{
-            currentElement.innerText = el;
-        })
-    }
-}
-
-addListenersToLetters();
+document.getElementById('word').addEventListener('click', ()=>{
+    const childWindow = window.open('./inputLetter.html', )
+})
